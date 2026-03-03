@@ -956,17 +956,46 @@ img {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 968px) {
+  .hero {
+    padding-top: 100px;
+  }
+
   .hero .container {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
   }
 
   .hero-content {
     max-width: 100%;
+    order: 2;
   }
 
   .hero-image-wrapper {
     max-width: 350px;
+    order: 1;
+  }
+
+  .hero-label {
+    font-size: 0.95rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.55em !important;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .hero-blob {
@@ -979,13 +1008,22 @@ img {
     height: 280px;
   }
 
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
   .about-intro {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
+  }
+
+  .about-photo-wrapper {
+    margin: 0 auto;
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+
+  .value-pills {
+    justify-content: center;
   }
 }
 
@@ -1012,6 +1050,11 @@ img {
     display: flex;
   }
 
+  .about-focus-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .projects-grid,
   .certificates-grid {
     grid-template-columns: 1fr;
@@ -1023,13 +1066,35 @@ img {
   }
 
   .section {
-    padding: 70px 0;
+    padding: 60px 0;
+  }
+
+  .vision-card {
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+
+  .vision-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .vision-card p {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero-label {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero-blob {
@@ -1048,5 +1113,17 @@ img {
 
   .skills-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .focus-card {
+    padding: 24px;
+  }
+
+  .focus-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
