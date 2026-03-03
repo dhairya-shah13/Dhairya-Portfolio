@@ -13,7 +13,7 @@ const Hero = () => {
                         transition={{ duration: 0.5 }}
                         className="hero-label"
                     >
-                        Developer & Designer
+                        FULL STACK DEVELOPER | BACKEND SPECIALIST | CYBERSECURITY ENTHUSIAST
                     </motion.span>
                     <motion.h1
                         initial={{ opacity: 0, y: 30 }}
@@ -21,7 +21,10 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="hero-title"
                     >
-                        Hello, my name<br />is <span>Dhairya</span>
+                        Hello, I’m <span>Dhairya.</span><br />
+                        <span className="hero-subtitle" style={{ fontSize: '0.6em', display: 'block', marginTop: '10px', color: 'var(--text)' }}>
+                            I build secure, scalable, and efficient digital systems.
+                        </span>
                     </motion.h1>
                     <motion.p
                         initial={{ opacity: 0, y: 30 }}
@@ -29,9 +32,9 @@ const Hero = () => {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="hero-description"
                     >
-                        I'm a passionate developer who loves building elegant solutions.
-                        Explore my projects and certifications to learn more about my work
-                        and professional journey.
+                        I’m a full stack developer with a strong focus on back-end engineering and database architecture. I specialize in building robust APIs, designing optimized data models, and creating systems that are secure, maintainable, and production-ready.
+                        <br /><br />
+                        Currently, I’m sharpening my expertise in backend scalability, DevOps practices, and cybersecurity to engineer systems that don’t just work — but withstand real-world challenges.
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

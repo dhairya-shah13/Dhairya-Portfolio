@@ -237,7 +237,7 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 80px;
+  padding-top: 140px;
   position: relative;
   overflow: hidden;
 }
@@ -256,12 +256,12 @@ img {
 
 .hero-label {
   display: inline-block;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--primary-dark);
   text-transform: uppercase;
-  letter-spacing: 2.5px;
-  margin-bottom: 16px;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
 }
 
 .hero-title {
@@ -422,6 +422,114 @@ img {
   font-size: 0.88rem;
   font-weight: 600;
   color: var(--dark);
+}
+
+/* About Focus Grid */
+.about-focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.focus-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  transition: var(--transition);
+  height: 100%;
+}
+
+.focus-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary);
+}
+
+.focus-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.focus-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 189, 118, 0.15);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-dark);
+}
+
+.focus-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+}
+
+.focus-card ul {
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.focus-card li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.focus-card li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-dark);
+  font-weight: bold;
+}
+
+.about-outro {
+  margin-top: 50px;
+}
+
+.outro-section {
+  margin-bottom: 30px;
+}
+
+.outro-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+
+.vision-card {
+  background: var(--dark);
+  color: var(--white);
+  padding: 40px;
+  border-radius: var(--radius);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.vision-card h3 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.vision-card p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
 /* Timeline */
