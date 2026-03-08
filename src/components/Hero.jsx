@@ -22,7 +22,7 @@ const Hero = () => {
                         className="hero-title"
                     >
                         Hello, I’m <span>Dhairya.</span><br />
-                        <span className="hero-subtitle" style={{ fontSize: '0.6em', display: 'block', marginTop: '10px', color: 'var(--text)' }}>
+                        <span className="hero-subtitle" style={{ fontSize: '0.5em', display: 'block', marginTop: '10px', color: 'var(--text)' }}>
                             I build secure, scalable, and efficient digital systems.
                         </span>
                     </motion.h1>

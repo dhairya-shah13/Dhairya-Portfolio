@@ -19,7 +19,7 @@ const Skills = () => {
             id="skills"
             title="My Skills"
             subtitle="Technologies and tools I work with on a daily basis."
-            style={{ background: 'var(--bg-light)' }}
+            style={{ background: 'transparent' }}
         >
             <div className="skills-grid">
                 {skills.map((skill, index) => (

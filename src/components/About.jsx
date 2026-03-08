@@ -28,11 +28,15 @@ const About = () => {
                         {['Performance', 'Security', 'Scalability', 'Clean architecture', 'Long-term maintainability'].map(val => (
                             <span key={val} style={{
                                 padding: '6px 14px',
-                                background: 'rgba(255, 189, 118, 0.2)',
-                                color: 'var(--primary-dark)',
-                                borderRadius: '20px',
-                                fontSize: '0.85rem',
-                                fontWeight: '600'
+                                background: 'rgba(0, 229, 255, 0.1)',
+                                color: 'var(--primary)',
+                                borderRadius: '0',
+                                fontSize: '0.75rem',
+                                fontWeight: '600',
+                                fontFamily: "'Press Start 2P', cursive",
+                                border: '1px solid rgba(0, 229, 255, 0.2)',
+                                textTransform: 'uppercase',
+                                letterSpacing: '0.5px'
                             }}>
                                 {val}
                             </span>
@@ -98,7 +102,7 @@ const About = () => {
 
             <div className="about-outro">
                 <div className="outro-section">
-                    <h3><Zap size={24} style={{ marginRight: '10px', verticalAlign: 'middle', color: 'var(--primary-dark)' }} /> What Drives Me</h3>
+                    <h3><Zap size={24} style={{ marginRight: '10px', verticalAlign: 'middle', color: 'var(--primary)' }} /> What Drives Me</h3>
                     <p>
                         I’m constantly refining my backend engineering skills and pushing myself to understand how large-scale systems operate under load, how data flows efficiently, and how vulnerabilities are prevented before they arise.
                     </p>

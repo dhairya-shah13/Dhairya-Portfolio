@@ -15,7 +15,7 @@ const Projects = () => {
             desc: '<p>A full-stack expense tracking application with category breakdowns, interactive charts, and split expense features. (More details to be added...)</p>',
             gradient: 'linear-gradient(135deg, #FFB800 0%, #FF8C00 100%)',
             icon: 'fa-chart-line',
-            live: '#',
+            live: 'https://fintrack-swart-theta.vercel.app/',
             github: 'https://github.com/dhairya-shah13/FinTrack'
         },
         {
