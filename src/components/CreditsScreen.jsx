@@ -9,7 +9,7 @@ const CreditsScreen = ({ onRestart }) => {
         { role: 'BACKEND ARCHITECT', name: 'DHAIRYA' },
         { role: 'SECURITY SPECIALIST', name: 'DHAIRYA' },
         { role: 'DEVOPS ENGINEER', name: 'DHAIRYA' },
-        { role: 'ALIEN SLAYER', name: 'YOU!' },
+        { role: 'DOOM SLAYER', name: 'YOU!' },
     ];
 
     return (
@@ -28,8 +28,8 @@ const CreditsScreen = ({ onRestart }) => {
                     className="credits-header"
                 >
                     <div className="credits-trophy">🏆</div>
-                    <h1 className="credits-title">CONGRATULATIONS!</h1>
-                    <p className="credits-subtitle">ALL LEVELS CLEARED • ALIEN DEFEATED</p>
+                    <h1 className="credits-title">EARTH'S MIGHTIEST HERO!</h1>
+                    <p className="credits-subtitle">ALL LEVELS CLEARED • DOOM DEFEATED</p>
                 </motion.div>
 
                 <motion.div
@@ -39,9 +39,9 @@ const CreditsScreen = ({ onRestart }) => {
                     className="credits-message"
                 >
                     <p>
-                        You did it, Player 1! You fought your way through all 5 levels of my portfolio
-                        AND took down the giant alien boss threatening the galaxy.
-                        The ships salute you. The stars shine brighter because of you. 🌟
+                        You did it, Player 1! You fought alongside Dhairya's Heroes
+                        through all 5 levels and when they fell, YOU rose up and defeated
+                        Doctor Doom single-handedly. Dhairya salutes you. 🌟
                     </p>
                     <p>
                         Thank you for taking the time to explore my journey — every project, skill, and
@@ -49,7 +49,7 @@ const CreditsScreen = ({ onRestart }) => {
                         I hope you had as much fun playing through my portfolio as I did building it!
                     </p>
                     <p>
-                        Now that we've saved the galaxy together, maybe we should build something next? 🚀
+                        Now that we've saved the world together, maybe we should build something next? 🚀
                     </p>
                 </motion.div>
 
@@ -116,7 +116,7 @@ const CreditsScreen = ({ onRestart }) => {
                     className="credits-footer-text"
                 >
                     <p>© {new Date().getFullYear()} DHAIRYA. ALL RIGHTS RESERVED.</p>
-                    <p>NO ALIENS WERE HARMED IN THE MAKING OF THIS PORTFOLIO (MAYBE ONE)</p>
+                    <p>NO DOOMS WERE HARMED IN THE MAKING OF THIS PORTFOLIO (MAYBE ONE)</p>
                 </motion.div>
             </div>
         </motion.div>

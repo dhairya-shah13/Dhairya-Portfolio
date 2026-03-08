@@ -25,16 +25,16 @@ const About = () => {
                         I believe that great software is not just about features — it's about:
                     </p>
                     <div className="value-pills" style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '10px' }}>
-                        {['Performance', 'Security', 'Scalability', 'Clean architecture', 'Long-term maintainability'].map(val => (
+                        {['Performance', 'Security', 'Scalability', 'Clean architecture', 'Maintainability'].map(val => (
                             <span key={val} style={{
                                 padding: '6px 14px',
-                                background: 'rgba(0, 229, 255, 0.1)',
-                                color: 'var(--primary)',
+                                background: 'rgba(51, 60, 56, 0.9)', /* Rookwood solid */
+                                color: 'var(--accent-green)', /* Brass Mesh */
                                 borderRadius: '0',
-                                fontSize: '0.75rem',
-                                fontWeight: '600',
-                                fontFamily: "'Press Start 2P', cursive",
-                                border: '1px solid rgba(0, 229, 255, 0.2)',
+                                fontSize: '0.7rem',
+                                fontWeight: '700',
+                                fontFamily: "var(--font-pixel)",
+                                border: '2px solid var(--primary)', /* Caribe */
                                 textTransform: 'uppercase',
                                 letterSpacing: '0.5px'
                             }}>
@@ -102,7 +102,7 @@ const About = () => {
 
             <div className="about-outro">
                 <div className="outro-section">
-                    <h3><Zap size={24} style={{ marginRight: '10px', verticalAlign: 'middle', color: 'var(--primary)' }} /> What Drives Me</h3>
+                    <h3><Zap size={24} style={{ marginRight: '10px', verticalAlign: 'middle', color: 'var(--accent-green)' }} /> What Drives Me</h3>
                     <p>
                         I’m constantly refining my backend engineering skills and pushing myself to understand how large-scale systems operate under load, how data flows efficiently, and how vulnerabilities are prevented before they arise.
                     </p>

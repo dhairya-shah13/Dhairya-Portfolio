@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const GameLevel = ({ level, levelTitle, children, onNext, nextLabel, isActive }) => {
+const GameLevel = ({ level, levelTitle, children, onNext, nextLabel, isActive, doomHp = 100 }) => {
     if (!isActive) return null;
+
+    const hpColor = doomHp > 60 ? '#333c38' : doomHp > 30 ? '#e2a449' : '#bf4723';
 
     return (
         <motion.div

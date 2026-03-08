@@ -25,7 +25,7 @@ const WelcomeScreen = ({ onContinue }) => {
                     transition={{ duration: 0.8, delay: 0.6, type: 'spring', stiffness: 120 }}
                     className="welcome-title"
                 >
-                    WELCOME<br />PLAYER 1
+                    MISSION:<br />DEFEAT DOOM
                 </motion.h1>
 
                 <motion.div
@@ -34,18 +34,24 @@ const WelcomeScreen = ({ onContinue }) => {
                     transition={{ delay: 1.2 }}
                     className="welcome-info"
                 >
-                    <div className="welcome-stats">
-                        <div className="stat-item">
-                            <span className="stat-label">NAME</span>
-                            <span className="stat-value">DHAIRYA</span>
+                    <div className="welcome-stats" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '15px' }}>
+                        <div className="stat-item" style={{ width: '100%', maxWidth: '450px' }}>
+                            <span className="stat-label">OPERATIVE SPECS</span>
+                            <span className="stat-value" style={{ fontSize: '0.65rem', color: 'var(--accent-green)' }}>
+                                FULL STACK DEV | BACKEND SPECIALIST
+                            </span>
                         </div>
-                        <div className="stat-item">
-                            <span className="stat-label">CLASS</span>
-                            <span className="stat-value">FULL STACK DEV</span>
+                        <div className="stat-item" style={{ width: '100%', maxWidth: '450px' }}>
+                            <span className="stat-label">UPGRADING SUBSYSTEMS</span>
+                            <span className="stat-value" style={{ fontSize: '0.5rem', color: 'var(--text)' }}>
+                                CYBERSECURITY & DEVOPS
+                            </span>
                         </div>
-                        <div className="stat-item">
-                            <span className="stat-label">LEVELS</span>
-                            <span className="stat-value">5</span>
+                        <div className="stat-item" style={{ width: '100%', maxWidth: '450px', border: '3px solid var(--accent-orange)' }}>
+                            <span className="stat-label" style={{ color: 'var(--accent-orange)' }}>PRIMARY TARGET</span>
+                            <span className="stat-value" style={{ color: 'var(--accent-orange)', textShadow: 'var(--glow-rust)' }}>
+                                DOCTOR DOOM
+                            </span>
                         </div>
                     </div>
                 </motion.div>
@@ -57,7 +63,7 @@ const WelcomeScreen = ({ onContinue }) => {
                     className="welcome-actions"
                 >
                     <button className="btn btn-primary welcome-start-btn" onClick={onContinue}>
-                        &#9654; START GAME
+                        &#9654; ASSEMBLE TEAM
                     </button>
                 </motion.div>
 
@@ -67,7 +73,7 @@ const WelcomeScreen = ({ onContinue }) => {
                     transition={{ delay: 2.2 }}
                     className="welcome-hint"
                 >
-                    COMPLETE ALL 5 LEVELS TO ROLL CREDITS
+                    COMPLETE ALL 5 LEVELS TO CONFRONT DOOM
                 </motion.div>
             </div>
         </motion.div>

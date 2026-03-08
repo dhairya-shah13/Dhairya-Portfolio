@@ -15,6 +15,15 @@ import { AnimatePresence } from 'framer-motion';
 // Game states: splash → welcome → level1..level5 → boss → credits
 const GAME_STATES = ['splash', 'welcome', 'level1', 'level2', 'level3', 'level4', 'level5', 'boss', 'credits'];
 
+// Doom HP decreases as levels progress
+const DOOM_HP_BY_LEVEL = {
+  level1: 100,
+  level2: 80,
+  level3: 60,
+  level4: 40,
+  level5: 20,
+};
+
 function App() {
   const [gameState, setGameState] = useState('splash');
 
@@ -33,9 +42,12 @@ function App() {
     setGameState('splash');
   };
 
+  // Current Doom HP for background and level display
+  const currentDoomHp = DOOM_HP_BY_LEVEL[gameState] || (gameState === 'boss' ? 5 : gameState === 'credits' ? 0 : 100);
+
   return (
     <div className="game-container">
-      <StarField />
+      <StarField doomHp={currentDoomHp} gameState={gameState} />
       <div className="portfolio-app">
         <AnimatePresence mode="wait">
           {gameState === 'splash' && (
@@ -53,6 +65,7 @@ function App() {
             isActive={gameState === 'level1'}
             onNext={goToNext}
             nextLabel="NEXT LEVEL ▸"
+            doomHp={DOOM_HP_BY_LEVEL.level1}
           >
             <About />
           </GameLevel>
@@ -64,6 +77,7 @@ function App() {
             isActive={gameState === 'level2'}
             onNext={goToNext}
             nextLabel="NEXT LEVEL ▸"
+            doomHp={DOOM_HP_BY_LEVEL.level2}
           >
             <Skills />
           </GameLevel>
@@ -75,6 +89,7 @@ function App() {
             isActive={gameState === 'level3'}
             onNext={goToNext}
             nextLabel="NEXT LEVEL ▸"
+            doomHp={DOOM_HP_BY_LEVEL.level3}
           >
             <Experience />
           </GameLevel>
@@ -86,6 +101,7 @@ function App() {
             isActive={gameState === 'level4'}
             onNext={goToNext}
             nextLabel="NEXT LEVEL ▸"
+            doomHp={DOOM_HP_BY_LEVEL.level4}
           >
             <Projects />
           </GameLevel>
@@ -96,7 +112,8 @@ function App() {
             levelTitle="CERTIFICATES"
             isActive={gameState === 'level5'}
             onNext={goToNext}
-            nextLabel="⚔ FIGHT THE BOSS ▸"
+            nextLabel="⚔ CONFRONT DOOM ▸"
+            doomHp={DOOM_HP_BY_LEVEL.level5}
           >
             <Certificates />
           </GameLevel>

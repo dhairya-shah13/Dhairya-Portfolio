@@ -19,7 +19,7 @@ const SplashScreen = ({ onStart }) => {
                     className="splash-title-container"
                 >
                     <h1 className="splash-title">DHAIRYA</h1>
-                    <div className="splash-subtitle">THE PORTFOLIO</div>
+                    <div className="splash-subtitle">PORTFOLIO ASSEMBLE</div>
                     <div className="splash-version">v1.0</div>
                 </motion.div>
 
@@ -30,7 +30,7 @@ const SplashScreen = ({ onStart }) => {
                     className="splash-tap"
                     onClick={onStart}
                 >
-                    <span>&#9654; TAP TO PLAY &#9664;</span>
+                    <span>&#9654; TAP TO ASSEMBLE &#9664;</span>
                 </motion.div>
 
                 <motion.div
@@ -39,7 +39,7 @@ const SplashScreen = ({ onStart }) => {
                     transition={{ delay: 2 }}
                     className="splash-footer"
                 >
-                    <p>© 2025 ALL RIGHTS RESERVED</p>
+                    <p>© 2025 DHAIRYA • ALL RIGHTS RESERVED</p>
                 </motion.div>
             </div>
         </motion.div>

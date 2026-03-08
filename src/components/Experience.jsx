@@ -32,10 +32,17 @@ const Experience = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: index * 0.2 }}
                         className="timeline-item"
+                        style={{
+                            background: 'rgba(51, 60, 56, 0.95)', /* Opaque Rookwood */
+                            padding: '24px',
+                            border: '3px solid var(--primary)',
+                            boxShadow: 'inset -3px -3px 0px 0px rgba(0, 0, 0, 0.5), 4px 4px 0px 0px rgba(0, 0, 0, 0.3)',
+                            marginBottom: '30px'
+                        }}
                     >
-                        <h3>{exp.title}</h3>
-                        <span className="timeline-meta">{exp.meta}</span>
-                        <p>{exp.desc}</p>
+                        <h3 style={{ color: 'var(--accent-green)', marginBottom: '8px', fontSize: '0.75rem' }}>{exp.title}</h3>
+                        <span className="timeline-meta" style={{ color: 'var(--primary-light)', fontSize: '0.55rem', fontWeight: '700' }}>{exp.meta}</span>
+                        <p style={{ marginTop: '12px', fontSize: '0.9rem', color: 'var(--text)' }}>{exp.desc}</p>
                     </motion.div>
                 ))}
             </div>

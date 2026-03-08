@@ -11,9 +11,9 @@ const Projects = () => {
         {
             id: 'fintrack',
             title: 'FinTrack — Expense Tracker',
-            tags: ['Python', 'Flask', 'JavaScript', 'Chart.js'],
-            desc: '<p>A full-stack expense tracking application with category breakdowns, interactive charts, and split expense features. (More details to be added...)</p>',
-            gradient: 'linear-gradient(135deg, #FFB800 0%, #FF8C00 100%)',
+            tags: ['Python', 'Flask', 'JS', 'Chart.js'],
+            desc: '<p>A full-stack expense tracking application with category breakdowns, interactive charts, and split expense features. Optimized for performance and scale.</p>',
+            gradient: 'linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)',
             icon: 'fa-chart-line',
             live: 'https://fintrack-swart-theta.vercel.app/',
             github: 'https://github.com/dhairya-shah13/FinTrack'
@@ -21,9 +21,9 @@ const Projects = () => {
         {
             id: 'hrms',
             title: 'HRMS Dashboard',
-            tags: ['MongoDB', 'Express', 'React', 'Node.js'],
-            desc: '<p>A human resource management system with employee authentication, attendance tracking, and dynamic dashboards. (More details to be added...)</p>',
-            gradient: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
+            tags: ['MongoDB', 'Express', 'React', 'Node'],
+            desc: '<p>A human resource management system with employee authentication, attendance tracking, and dynamic dashboards. Built for secure enterprise operations.</p>',
+            gradient: 'linear-gradient(135deg, var(--primary-light) 0%, var(--primary-dark) 100%)',
             icon: 'fa-users',
             live: '#',
             github: '#'
@@ -51,10 +51,11 @@ const Projects = () => {
                                     background: project.gradient,
                                     display: 'flex',
                                     alignItems: 'center',
-                                    justifyContent: 'center'
+                                    justifyContent: 'center',
+                                    borderBottom: '4px solid var(--primary)'
                                 }}
                             >
-                                <i className={`fas ${project.icon}`} style={{ fontSize: '3rem', color: 'white' }}></i>
+                                <i className={`fas ${project.icon}`} style={{ fontSize: '3.5rem', color: 'var(--accent-green)', textShadow: '3px 3px 0px var(--dark)' }}></i>
                             </div>
                             <div className="project-card-body">
                                 <h3>{project.title}</h3>
